@@ -50,7 +50,7 @@ body { background: var(--color-bg); color: var(--color-fg); font-family: var(--f
 <script>
 /* A small stand-in for the Claude dashboard runtime: the same page code runs on data embedded at build time. */
 (function () {
-  var DATA = {"datasets":{"planner":[{"date":"2026-09-01","day":"Tuesday","week":"36","month":"September 2026","task":"Cleaning Beds","zone":"Raised Beds","category":"Cleaning / Sanitation","status":"Planned","priority":"Medium"},{"date":"2026-09-02","day":"Wednesday","week":"36","month":"September 2026","task":"Fertilizing Beds","zone":"Raised Beds","category":"Fertilizing / Feeding","status":"Planned","priority":"Medium"},{"date":"2026-09-03","day":"Thursday","week":"36","month":"September 2026","task":"Completing Structure for Blackberries","zone":"Raised Beds","category":"Pruning / Training","status":"Planned","priority":"Medium"},{"date":"2026-09-04","day":"Friday","week":"36","month":"September 2026","task":"Grass Trimming","zone":"Paths / Boundaries","category":"Pruning / Training","status":"Planned","priority":"Medium"},{"date":"2026-09-05","day":"Saturday","week":"36","month":"September 2026","task":"Preparation of A4 for germination","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"High"},{"date":"2026-09-06","day":"Sunday","week":"36","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-07","day":"Monday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-08","day":"Tuesday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-09","day":"Wednesday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-10","day":"Thursday","week":"37","month":"September 2026","task":"(Tentative) Sowing of early yielding vegetables: Radish, Fenugreek, Spinach, Calendula","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"Low"},{"date":"2026-09-11","day":"Friday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-12","day":"Saturday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-13","day":"Sunday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-14","day":"Monday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-15","day":"Tuesday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-16","day":"Wednesday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-17","day":"Thursday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-18","day":"Friday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-19","day":"Saturday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-20","day":"Sunday","week":"38","month":"September 2026","task":"Weather assessment for sowing imported seeds","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"Medium"},{"date":"2026-09-21","day":"Monday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-22","day":"Tuesday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-23","day":"Wednesday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-24","day":"Thursday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-25","day":"Friday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-26","day":"Saturday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-27","day":"Sunday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-28","day":"Monday","week":"40","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-29","day":"Tuesday","week":"40","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-30","day":"Wednesday","week":"40","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-01","day":"Thursday","week":"40","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-02","day":"Friday","week":"40","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-03","day":"Saturday","week":"40","month":"October 2026","task":"Garlic Sowing in A1,B1,C1,D1","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"High"},{"date":"2026-10-04","day":"Sunday","week":"40","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-05","day":"Monday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-06","day":"Tuesday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-07","day":"Wednesday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-08","day":"Thursday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-09","day":"Friday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-10","day":"Saturday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-11","day":"Sunday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-12","day":"Monday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-13","day":"Tuesday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-14","day":"Wednesday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-15","day":"Thursday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-16","day":"Friday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-17","day":"Saturday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-18","day":"Sunday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-19","day":"Monday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-20","day":"Tuesday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-21","day":"Wednesday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-22","day":"Thursday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-23","day":"Friday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-24","day":"Saturday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-25","day":"Sunday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-26","day":"Monday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-27","day":"Tuesday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-28","day":"Wednesday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-29","day":"Thursday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-30","day":"Friday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-31","day":"Saturday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-01","day":"Sunday","week":"44","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-02","day":"Monday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-03","day":"Tuesday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-04","day":"Wednesday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-05","day":"Thursday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-06","day":"Friday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-07","day":"Saturday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-08","day":"Sunday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-09","day":"Monday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-10","day":"Tuesday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-11","day":"Wednesday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-12","day":"Thursday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-13","day":"Friday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-14","day":"Saturday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-15","day":"Sunday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-16","day":"Monday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-17","day":"Tuesday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-18","day":"Wednesday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-19","day":"Thursday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-20","day":"Friday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-21","day":"Saturday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-22","day":"Sunday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-23","day":"Monday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-24","day":"Tuesday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-25","day":"Wednesday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-26","day":"Thursday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-27","day":"Friday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-28","day":"Saturday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-29","day":"Sunday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-30","day":"Monday","week":"49","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-01","day":"Tuesday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-02","day":"Wednesday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-03","day":"Thursday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-04","day":"Friday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-05","day":"Saturday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-06","day":"Sunday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-07","day":"Monday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-08","day":"Tuesday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-09","day":"Wednesday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-10","day":"Thursday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-11","day":"Friday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-12","day":"Saturday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-13","day":"Sunday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-14","day":"Monday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-15","day":"Tuesday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-16","day":"Wednesday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-17","day":"Thursday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-18","day":"Friday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-19","day":"Saturday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-20","day":"Sunday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-21","day":"Monday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-22","day":"Tuesday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-23","day":"Wednesday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-24","day":"Thursday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-25","day":"Friday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-26","day":"Saturday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-27","day":"Sunday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-28","day":"Monday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-29","day":"Tuesday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-30","day":"Wednesday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-31","day":"Thursday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-01","day":"Friday","week":"53","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-02","day":"Saturday","week":"53","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-03","day":"Sunday","week":"53","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-04","day":"Monday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-05","day":"Tuesday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-06","day":"Wednesday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-07","day":"Thursday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-08","day":"Friday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-09","day":"Saturday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-10","day":"Sunday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-11","day":"Monday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-12","day":"Tuesday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-13","day":"Wednesday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-14","day":"Thursday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-15","day":"Friday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-16","day":"Saturday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-17","day":"Sunday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-18","day":"Monday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-19","day":"Tuesday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-20","day":"Wednesday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-21","day":"Thursday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-22","day":"Friday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-23","day":"Saturday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-24","day":"Sunday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-25","day":"Monday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-26","day":"Tuesday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-27","day":"Wednesday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-28","day":"Thursday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-29","day":"Friday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-30","day":"Saturday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-31","day":"Sunday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-01","day":"Monday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-02","day":"Tuesday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-03","day":"Wednesday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-04","day":"Thursday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-05","day":"Friday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-06","day":"Saturday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-07","day":"Sunday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-08","day":"Monday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-09","day":"Tuesday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-10","day":"Wednesday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-11","day":"Thursday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-12","day":"Friday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-13","day":"Saturday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-14","day":"Sunday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-15","day":"Monday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-16","day":"Tuesday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-17","day":"Wednesday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-18","day":"Thursday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-19","day":"Friday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-20","day":"Saturday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-21","day":"Sunday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-22","day":"Monday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-23","day":"Tuesday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-24","day":"Wednesday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-25","day":"Thursday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-26","day":"Friday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-27","day":"Saturday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-28","day":"Sunday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-03-01","day":"Monday","week":"9","month":"March 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"}],"lists":[{"list":"category","value":"Seeds & Nursery","order":"1"},{"list":"category","value":"Sowing / Planting","order":"2"},{"list":"category","value":"Irrigation","order":"3"},{"list":"category","value":"Weeding","order":"4"},{"list":"category","value":"Mulching","order":"5"},{"list":"category","value":"Compost / Soil","order":"6"},{"list":"category","value":"Fertilizing / Feeding","order":"7"},{"list":"category","value":"Pruning / Training","order":"8"},{"list":"category","value":"Pest / Disease","order":"9"},{"list":"category","value":"Harvest / Post-harvest","order":"10"},{"list":"category","value":"Orchard / Trees","order":"11"},{"list":"category","value":"Raised Beds","order":"12"},{"list":"category","value":"Livestock / Ducks","order":"13"},{"list":"category","value":"Pond / Water","order":"14"},{"list":"category","value":"Structures / Repairs","order":"15"},{"list":"category","value":"Procurement","order":"16"},{"list":"category","value":"Cleaning / Sanitation","order":"17"},{"list":"category","value":"Observation / Monitoring","order":"18"},{"list":"category","value":"Other","order":"19"},{"list":"status","value":"Planned","order":"1"},{"list":"status","value":"In Progress","order":"2"},{"list":"status","value":"Completed","order":"3"},{"list":"status","value":"Deferred","order":"4"},{"list":"status","value":"Cancelled","order":"5"},{"list":"priority","value":"High","order":"1"},{"list":"priority","value":"Medium","order":"2"},{"list":"priority","value":"Low","order":"3"},{"list":"zone","value":"Orchard","order":"1"},{"list":"zone","value":"Raised Beds","order":"2"},{"list":"zone","value":"Nursery","order":"3"},{"list":"zone","value":"Pond","order":"4"},{"list":"zone","value":"Duck Area / Passage","order":"5"},{"list":"zone","value":"Compost Area","order":"6"},{"list":"zone","value":"Structures","order":"7"},{"list":"zone","value":"Paths / Boundaries","order":"8"},{"list":"zone","value":"Whole Farm","order":"9"},{"list":"zone","value":"Other","order":"10"}]},"built":"2026-10-10T02:55:17Z"};
+  var DATA = {"datasets":{"planner":[{"date":"2026-09-01","day":"Tuesday","week":"36","month":"September 2026","task":"Cleaning Beds","zone":"Raised Beds","category":"Cleaning / Sanitation","status":"Planned","priority":"Medium"},{"date":"2026-09-02","day":"Wednesday","week":"36","month":"September 2026","task":"Fertilizing Beds","zone":"Raised Beds","category":"Fertilizing / Feeding","status":"Planned","priority":"Medium"},{"date":"2026-09-03","day":"Thursday","week":"36","month":"September 2026","task":"Completing Structure for Blackberries","zone":"Raised Beds","category":"Pruning / Training","status":"Planned","priority":"Medium"},{"date":"2026-09-04","day":"Friday","week":"36","month":"September 2026","task":"Grass Trimming","zone":"Paths / Boundaries","category":"Pruning / Training","status":"Planned","priority":"Medium"},{"date":"2026-09-05","day":"Saturday","week":"36","month":"September 2026","task":"Preparation of A4 for germination","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"High"},{"date":"2026-09-06","day":"Sunday","week":"36","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-07","day":"Monday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-08","day":"Tuesday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-09","day":"Wednesday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-10","day":"Thursday","week":"37","month":"September 2026","task":"(Tentative) Sowing of early yielding vegetables: Radish, Fenugreek, Spinach, Calendula","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"Low"},{"date":"2026-09-11","day":"Friday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-12","day":"Saturday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-13","day":"Sunday","week":"37","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-14","day":"Monday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-15","day":"Tuesday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-16","day":"Wednesday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-17","day":"Thursday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-18","day":"Friday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-19","day":"Saturday","week":"38","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-20","day":"Sunday","week":"38","month":"September 2026","task":"Weather assessment for sowing imported seeds","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"Medium"},{"date":"2026-09-21","day":"Monday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-22","day":"Tuesday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-23","day":"Wednesday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-24","day":"Thursday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-25","day":"Friday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-26","day":"Saturday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-27","day":"Sunday","week":"39","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-28","day":"Monday","week":"40","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-29","day":"Tuesday","week":"40","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-09-30","day":"Wednesday","week":"40","month":"September 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-01","day":"Thursday","week":"40","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-02","day":"Friday","week":"40","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-03","day":"Saturday","week":"40","month":"October 2026","task":"Garlic Sowing in A1,B1,C1,D1","zone":"Raised Beds","category":"Sowing / Planting","status":"Planned","priority":"High"},{"date":"2026-10-04","day":"Sunday","week":"40","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-05","day":"Monday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-06","day":"Tuesday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-07","day":"Wednesday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-08","day":"Thursday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-09","day":"Friday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-10","day":"Saturday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-11","day":"Sunday","week":"41","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-12","day":"Monday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-13","day":"Tuesday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-14","day":"Wednesday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-15","day":"Thursday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-16","day":"Friday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-17","day":"Saturday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-18","day":"Sunday","week":"42","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-19","day":"Monday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-20","day":"Tuesday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-21","day":"Wednesday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-22","day":"Thursday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-23","day":"Friday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-24","day":"Saturday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-25","day":"Sunday","week":"43","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-26","day":"Monday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-27","day":"Tuesday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-28","day":"Wednesday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-29","day":"Thursday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-30","day":"Friday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-10-31","day":"Saturday","week":"44","month":"October 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-01","day":"Sunday","week":"44","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-02","day":"Monday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-03","day":"Tuesday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-04","day":"Wednesday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-05","day":"Thursday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-06","day":"Friday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-07","day":"Saturday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-08","day":"Sunday","week":"45","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-09","day":"Monday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-10","day":"Tuesday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-11","day":"Wednesday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-12","day":"Thursday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-13","day":"Friday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-14","day":"Saturday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-15","day":"Sunday","week":"46","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-16","day":"Monday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-17","day":"Tuesday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-18","day":"Wednesday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-19","day":"Thursday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-20","day":"Friday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-21","day":"Saturday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-22","day":"Sunday","week":"47","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-23","day":"Monday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-24","day":"Tuesday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-25","day":"Wednesday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-26","day":"Thursday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-27","day":"Friday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-28","day":"Saturday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-29","day":"Sunday","week":"48","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-11-30","day":"Monday","week":"49","month":"November 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-01","day":"Tuesday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-02","day":"Wednesday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-03","day":"Thursday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-04","day":"Friday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-05","day":"Saturday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-06","day":"Sunday","week":"49","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-07","day":"Monday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-08","day":"Tuesday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-09","day":"Wednesday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-10","day":"Thursday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-11","day":"Friday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-12","day":"Saturday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-13","day":"Sunday","week":"50","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-14","day":"Monday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-15","day":"Tuesday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-16","day":"Wednesday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-17","day":"Thursday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-18","day":"Friday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-19","day":"Saturday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-20","day":"Sunday","week":"51","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-21","day":"Monday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-22","day":"Tuesday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-23","day":"Wednesday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-24","day":"Thursday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-25","day":"Friday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-26","day":"Saturday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-27","day":"Sunday","week":"52","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-28","day":"Monday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-29","day":"Tuesday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-30","day":"Wednesday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2026-12-31","day":"Thursday","week":"53","month":"December 2026","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-01","day":"Friday","week":"53","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-02","day":"Saturday","week":"53","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-03","day":"Sunday","week":"53","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-04","day":"Monday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-05","day":"Tuesday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-06","day":"Wednesday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-07","day":"Thursday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-08","day":"Friday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-09","day":"Saturday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-10","day":"Sunday","week":"1","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-11","day":"Monday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-12","day":"Tuesday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-13","day":"Wednesday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-14","day":"Thursday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-15","day":"Friday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-16","day":"Saturday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-17","day":"Sunday","week":"2","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-18","day":"Monday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-19","day":"Tuesday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-20","day":"Wednesday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-21","day":"Thursday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-22","day":"Friday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-23","day":"Saturday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-24","day":"Sunday","week":"3","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-25","day":"Monday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-26","day":"Tuesday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-27","day":"Wednesday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-28","day":"Thursday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-29","day":"Friday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-30","day":"Saturday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-01-31","day":"Sunday","week":"4","month":"January 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-01","day":"Monday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-02","day":"Tuesday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-03","day":"Wednesday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-04","day":"Thursday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-05","day":"Friday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-06","day":"Saturday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-07","day":"Sunday","week":"5","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-08","day":"Monday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-09","day":"Tuesday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-10","day":"Wednesday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-11","day":"Thursday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-12","day":"Friday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-13","day":"Saturday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-14","day":"Sunday","week":"6","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-15","day":"Monday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-16","day":"Tuesday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-17","day":"Wednesday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-18","day":"Thursday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-19","day":"Friday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-20","day":"Saturday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-21","day":"Sunday","week":"7","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-22","day":"Monday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-23","day":"Tuesday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-24","day":"Wednesday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-25","day":"Thursday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-26","day":"Friday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-27","day":"Saturday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-02-28","day":"Sunday","week":"8","month":"February 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"},{"date":"2027-03-01","day":"Monday","week":"9","month":"March 2027","task":"","zone":"","category":"","status":"Planned","priority":"Medium"}],"lists":[{"list":"category","value":"Seeds & Nursery","order":"1"},{"list":"category","value":"Sowing / Planting","order":"2"},{"list":"category","value":"Irrigation","order":"3"},{"list":"category","value":"Weeding","order":"4"},{"list":"category","value":"Mulching","order":"5"},{"list":"category","value":"Compost / Soil","order":"6"},{"list":"category","value":"Fertilizing / Feeding","order":"7"},{"list":"category","value":"Pruning / Training","order":"8"},{"list":"category","value":"Pest / Disease","order":"9"},{"list":"category","value":"Harvest / Post-harvest","order":"10"},{"list":"category","value":"Orchard / Trees","order":"11"},{"list":"category","value":"Raised Beds","order":"12"},{"list":"category","value":"Livestock / Ducks","order":"13"},{"list":"category","value":"Pond / Water","order":"14"},{"list":"category","value":"Structures / Repairs","order":"15"},{"list":"category","value":"Procurement","order":"16"},{"list":"category","value":"Cleaning / Sanitation","order":"17"},{"list":"category","value":"Observation / Monitoring","order":"18"},{"list":"category","value":"Other","order":"19"},{"list":"status","value":"Planned","order":"1"},{"list":"status","value":"In Progress","order":"2"},{"list":"status","value":"Completed","order":"3"},{"list":"status","value":"Deferred","order":"4"},{"list":"status","value":"Cancelled","order":"5"},{"list":"priority","value":"High","order":"1"},{"list":"priority","value":"Medium","order":"2"},{"list":"priority","value":"Low","order":"3"},{"list":"zone","value":"Orchard","order":"1"},{"list":"zone","value":"Raised Beds","order":"2"},{"list":"zone","value":"Nursery","order":"3"},{"list":"zone","value":"Pond","order":"4"},{"list":"zone","value":"Duck Area / Passage","order":"5"},{"list":"zone","value":"Compost Area","order":"6"},{"list":"zone","value":"Structures","order":"7"},{"list":"zone","value":"Paths / Boundaries","order":"8"},{"list":"zone","value":"Whole Farm","order":"9"},{"list":"zone","value":"Other","order":"10"}]},"built":"2026-10-10T03:00:18Z"};
   var calcs = {}, cache = {}, subs = [];
   function rowsOf(id) {
     if (Object.prototype.hasOwnProperty.call(DATA.datasets, id)) return DATA.datasets[id];
@@ -126,9 +126,20 @@ body { background: var(--color-bg); color: var(--color-fg); font-family: var(--f
 .bg-vine text { fill: var(--color-fg-muted); font-size: 11px; font-family: var(--font-anthropic-sans); }
 .bg-vine .now { fill: var(--color-fg); font-weight: 600; }
 
-/* filter bar */
-.bg-filterbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); }
-.bg-filterbar .lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+/* slicers */
+.bg-slicers { background: var(--leaf-wash); border: 1px solid color-mix(in oklab, var(--leaf) 22%, var(--color-border-line)); border-radius: calc(var(--cds-radius) * 1.5); padding: var(--cds-pad-md) var(--cds-pad-lg) var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+.bg-slicers-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm) var(--cds-gap-md); }
+.bg-slicers-head h2 { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-heading); display: flex; align-items: center; gap: var(--cds-gap-sm); }
+.bg-slicers-head h2 svg { width: 18px; height: 18px; fill: none; stroke: var(--leaf-deep); stroke-width: 2; stroke-linecap: round; }
+.bg-slicers-head .scope { flex: 1 1 12rem; }
+.bg-reset { font: inherit; font-size: var(--cds-font-size-caption); border: 1px solid color-mix(in oklab, var(--leaf) 35%, var(--color-border-line)); background: var(--color-panel); color: var(--color-fg); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.bg-reset:disabled { opacity: .45; cursor: default; }
+.bg-reset:focus-visible, .bg-field input:focus-visible, .bg-field select:focus-visible { outline: 2px solid var(--sun); outline-offset: 1px; }
+.bg-slicer-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr)); gap: var(--cds-gap-sm) var(--cds-gap-md); align-items: end; }
+.bg-field { display: flex; flex-direction: column; gap: 4px; min-width: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bg-field input, .bg-field select { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 6px 8px; min-width: 0; width: 100%; }
+.bg-field.on input, .bg-field.on select { border-color: var(--leaf-deep); box-shadow: inset 0 0 0 1px var(--leaf-deep); }
+.bg-field .bg-seg { align-self: flex-start; }
 .bg-seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 999px; background: var(--leaf-wash); border: 1px solid color-mix(in oklab, var(--leaf) 20%, var(--color-border-line)); }
 .bg-seg button { font: inherit; font-size: var(--cds-font-size-caption); border: 0; background: transparent; color: var(--color-fg); padding: 5px 12px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
 .bg-seg button i { width: 9px; height: 9px; border-radius: 50% 0; display: inline-block; transform: rotate(-45deg); }
@@ -255,20 +266,34 @@ body { background: var(--color-bg); color: var(--color-fg); font-family: var(--f
     </div>
   </section>
 
-  <div class="bg-filterbar" id="priority-filter">
-    <span class="lab">Priority</span>
-    <div class="bg-seg" role="group" aria-label="Filter by priority">
-      <button type="button" data-p="All" aria-pressed="true">All</button>
-      <button type="button" data-p="High" aria-pressed="false"><i style="background: var(--leaf-deep)"></i>High</button>
-      <button type="button" data-p="Medium" aria-pressed="false"><i style="background: var(--leaf-mid)"></i>Medium</button>
-      <button type="button" data-p="Low" aria-pressed="false"><i style="background: var(--leaf-soft)"></i>Low</button>
+  <section class="bg-slicers" id="slicers" aria-label="Slicers">
+    <div class="bg-slicers-head">
+      <h2><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Slicers</h2>
+      <span class="scope" id="bg-scope">Showing every job.</span>
+      <button type="button" class="bg-reset" id="bg-reset">Reset all</button>
     </div>
-    <span class="scope" id="bg-scope">Filters the calendar, charts and job list below.</span>
-  </div>
+    <div class="bg-slicer-grid">
+      <label class="bg-field"><span>From</span><input type="date" id="sl-from" min="2026-09-01" max="2027-03-01"></label>
+      <label class="bg-field"><span>To</span><input type="date" id="sl-to" min="2026-09-01" max="2027-03-01"></label>
+      <label class="bg-field"><span>Month</span><select id="sl-month" data-source="planner"><option value="">All months</option></select></label>
+      <label class="bg-field"><span>Week</span><select id="sl-week" data-source="planner"><option value="">All weeks</option></select></label>
+      <label class="bg-field"><span>Farm zone</span><select id="sl-zone" data-source="lists"><option value="">All zones</option></select></label>
+      <label class="bg-field"><span>Activity</span><select id="sl-category" data-source="lists"><option value="">All activities</option></select></label>
+      <label class="bg-field"><span>Status</span><select id="sl-status" data-source="lists"><option value="">All statuses</option></select></label>
+      <div class="bg-field"><span id="sl-prio-lab">Priority</span>
+        <div class="bg-seg" role="group" aria-labelledby="sl-prio-lab">
+          <button type="button" data-p="All" aria-pressed="true">All</button>
+          <button type="button" data-p="High" aria-pressed="false"><i style="background: var(--leaf-deep)"></i>High</button>
+          <button type="button" data-p="Medium" aria-pressed="false"><i style="background: var(--leaf-mid)"></i>Med</button>
+          <button type="button" data-p="Low" aria-pressed="false"><i style="background: var(--leaf-soft)"></i>Low</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="bg-card" id="season-calendar">
     <h2><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Season calendar</h2>
-    <p class="note">Each mark is one day from 1 Sep 2026 to 1 Mar 2027. A leaf is a day with a job, shaded by priority. The marigold ring is today.</p>
+    <p class="note">Each mark is one day from 1 Sep 2026 to 1 Mar 2027. A leaf is a day with a job, shaded by priority. Days and jobs outside the slicers fade back. The marigold ring is today.</p>
     <div class="bg-chart cal dash-skeleton" id="bg-cal" data-source="planner"></div>
     <div class="bg-legend" id="bg-cal-legend" data-source="planner"></div>
   </section>
@@ -276,18 +301,18 @@ body { background: var(--color-bg); color: var(--color-fg); font-family: var(--f
   <div class="bg-grid">
     <section class="bg-card" id="jobs-by-month">
       <h2><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 20v-6M12 20V8M17 20v-9"/></svg>Jobs by month</h2>
-      <p class="note">Jobs scheduled in each month of the season.</p>
-      <div class="bg-chart dash-skeleton" id="bg-month" data-source="byMonth"></div>
+      <p class="note">Jobs matching the slicers in each month, over a faint bar for the month's total.</p>
+      <div class="bg-chart dash-skeleton" id="bg-month" data-source="planner"></div>
     </section>
     <section class="bg-card" id="jobs-by-zone">
       <h2><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 20c0-4 2-6 6-6s6 2 6 6"/><path d="M12 14V9"/><path d="M12 9c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4Zm0 0c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4Z"/></svg>Jobs by farm zone</h2>
-      <p class="note">Every zone from the Lists sheet. Click a bar to filter the job list.</p>
-      <div class="bg-chart dash-skeleton" id="bg-zone" data-source="byZone"></div>
+      <p class="note">Every zone from the Lists sheet. Click a bar to slice by that zone.</p>
+      <div class="bg-chart dash-skeleton" id="bg-zone" data-source="planner lists"></div>
     </section>
     <section class="bg-card" id="jobs-by-activity">
       <h2><svg viewBox="0 0 24 24"><path d="M5 11h9l2-3h3v6a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4v-3Z"/><path d="M19 9l2-2"/><path d="M8 11V7a2 2 0 0 1 4 0v4"/></svg>Jobs by activity</h2>
-      <p class="note" id="bg-cat-note">Activity categories in use. Click a bar to filter the job list.</p>
-      <div class="bg-chart dash-skeleton" id="bg-cat" data-source="byCategory"></div>
+      <p class="note" id="bg-cat-note">Activity categories in use. Click a bar to slice by that activity.</p>
+      <div class="bg-chart dash-skeleton" id="bg-cat" data-source="planner lists"></div>
     </section>
   </div>
 
@@ -296,7 +321,6 @@ body { background: var(--color-bg); color: var(--color-fg); font-family: var(--f
     <p class="note">Every day in the planner that has a main job. Timing compares the job's date with today.</p>
     <div class="bg-tools">
       <input id="bg-search" type="search" placeholder="Search jobs, zones, activities" aria-label="Search jobs">
-      <button class="bg-chip" id="bg-filter" type="button" hidden></button>
     </div>
     <div class="bg-tablebox">
       <table class="bg-table" data-source="planner" data-row-key="date">
@@ -355,56 +379,85 @@ dash.calc('jobTiming', {
   }
 });
 
-dash.calc('byMonth', {
-  title: 'Jobs by month',
-  description: 'Days with a main job in each month of the season, in total and by priority.',
-  inputs: ['planner'],
-  fn: (planner) => {
-    const out = [];
-    for (const r of planner) {
-      let m = out.find(o => o.month === r.month);
-      if (!m) out.push(m = { month: r.month, days: 0, jobs: 0, high: 0, medium: 0, low: 0 });
-      m.days += 1;
-      if (r.task && r.task.trim()) { m.jobs += 1; m[(r.priority || '').toLowerCase()] += 1; }
-    }
-    return out;
-  }
-});
-
-dash.calc('byZone', {
-  title: 'Jobs by farm zone',
-  description: 'Jobs per farm zone, in total and by priority, listing every zone from the Lists sheet.',
-  inputs: ['planner', 'lists'],
-  fn: (planner, lists) => lists.filter(l => l.list === 'zone').map(l => {
-    const j = planner.filter(r => r.task && r.task.trim() && r.zone === l.value);
-    return { zone: l.value, jobs: j.length, high: j.filter(r => r.priority === 'High').length, medium: j.filter(r => r.priority === 'Medium').length, low: j.filter(r => r.priority === 'Low').length };
-  })
-});
-
-dash.calc('byCategory', {
-  title: 'Jobs by activity',
-  description: 'Jobs per activity category, in total and by priority, listing every category from the Lists sheet.',
-  inputs: ['planner', 'lists'],
-  fn: (planner, lists) => lists.filter(l => l.list === 'category').map(l => {
-    const j = planner.filter(r => r.task && r.task.trim() && r.category === l.value);
-    return { category: l.value, jobs: j.length, high: j.filter(r => r.priority === 'High').length, medium: j.filter(r => r.priority === 'Medium').length, low: j.filter(r => r.priority === 'Low').length };
-  })
-});
-
 (() => {
   const $ = id => document.getElementById(id);
   const fmtDay = d3.utcFormat('%a %-d %b');
   const fmtLong = d3.utcFormat('%-d %b %Y');
+  const fmtShort = d3.utcFormat('%-d %b');
   const parse = s => new Date(s + 'T00:00:00Z');
+  const iso = d3.utcFormat('%Y-%m-%d');
   const shade = { High: 'var(--leaf-deep)', Medium: 'var(--leaf-mid)', Low: 'var(--leaf-soft)' };
   const d = new Date();
   const todayIso = [d.getFullYear(), String(d.getMonth() + 1).padStart(2, '0'), String(d.getDate()).padStart(2, '0')].join('-');
-  const state = { q: '', filter: null, prio: 'All' };
-  try { const p = localStorage.getItem('bg-prio'); if (['All', 'High', 'Medium', 'Low'].includes(p)) state.prio = p; } catch (e) {}
-  const pField = () => state.prio === 'All' ? 'jobs' : state.prio.toLowerCase();
-  const prioOk = r => state.prio === 'All' || r.priority === state.prio;
   const leaf = (x, y, s) => `M${x},${y + s}Q${x},${y} ${x + s},${y}Q${x + s},${y + s} ${x},${y + s}Z`;
+  const isJob = r => !!(r.task && r.task.trim());
+  const weekKey = r => iso(d3.utcMonday.floor(parse(r.date)));
+
+  // ---------- slicer state ----------
+  const BLANK = { from: '', to: '', month: '', week: '', zone: '', category: '', status: '', prio: 'All' };
+  const S = Object.assign({}, BLANK, { q: '' });
+  try { const saved = JSON.parse(localStorage.getItem('bg-slicers') || '{}'); for (const k in BLANK) if (typeof saved[k] === 'string') S[k] = saved[k]; } catch (e) {}
+  const save = () => { try { const o = {}; for (const k in BLANK) o[k] = S[k]; localStorage.setItem('bg-slicers', JSON.stringify(o)); } catch (e) {} };
+  const dayOk = r => (!S.from || r.date >= S.from) && (!S.to || r.date <= S.to)
+    && (!S.month || r.month === S.month) && (!S.week || weekKey(r) === S.week);
+  const attrOk = r => (!S.zone || r.zone === S.zone) && (!S.category || r.category === S.category)
+    && (!S.status || r.status === S.status) && (S.prio === 'All' || r.priority === S.prio);
+  const jobOk = r => isJob(r) && dayOk(r) && attrOk(r);
+  const active = () => Object.keys(BLANK).filter(k => S[k] !== BLANK[k]);
   let animated = false, barsGrown = false;
+
+  function fillSelect(sel, items, allLabel) {
+    const want = [['', allLabel]].concat(items);
+    const sig = want.map(o => o[0]).join('|');
+    if (sel.dataset.sig !== sig) {
+      sel.replaceChildren(...want.map(([v, l]) => new Option(l, v)));
+      sel.dataset.sig = sig;
+    }
+  }
+
+  function syncControls(P, L) {
+    const plan = P.status === 'ok' ? P.data : [], lists = L.status === 'ok' ? L.data : [];
+    const months = [...new Set(plan.map(r => r.month))].map(m => [m, m]);
+    const weeks = []; const seen = new Set();
+    for (const r of plan) {
+      const k = weekKey(r);
+      if (seen.has(k)) continue; seen.add(k);
+      const mon = parse(k), sun = d3.utcDay.offset(mon, 6);
+      weeks.push([k, `Week ${r.week} · ${fmtShort(mon)} – ${fmtShort(sun)}`]);
+    }
+    const listOf = name => lists.filter(l => l.list === name).sort((a, b) => +a.order - +b.order).map(l => [l.value, l.value]);
+    fillSelect($('sl-month'), months, 'All months');
+    fillSelect($('sl-week'), weeks, 'All weeks');
+    fillSelect($('sl-zone'), listOf('zone'), 'All zones');
+    fillSelect($('sl-category'), listOf('category'), 'All activities');
+    fillSelect($('sl-status'), listOf('status'), 'All statuses');
+    const map = { from: 'sl-from', to: 'sl-to', month: 'sl-month', week: 'sl-week', zone: 'sl-zone', category: 'sl-category', status: 'sl-status' };
+    for (const k in map) {
+      const el = $(map[k]);
+      if (el !== document.activeElement || el.tagName === 'SELECT') el.value = S[k];
+      el.closest('.bg-field').classList.toggle('on', !!S[k]);
+    }
+    if (plan.length) { $('sl-from').min = $('sl-to').min = plan[0].date; $('sl-from').max = $('sl-to').max = plan[plan.length - 1].date; }
+    document.querySelectorAll('.bg-seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.p === S.prio)));
+    $('bg-reset').disabled = active().length === 0;
+    const all = plan.filter(isJob).length, shown = plan.filter(jobOk).length;
+    $('bg-scope').textContent = active().length === 0
+      ? `Showing all ${all} jobs. The figures above always cover the whole season.`
+      : `Showing ${shown} of ${all} jobs. The figures above cover the whole season.`;
+  }
+
+  function set(k, v) { S[k] = v; save(); render(); }
+  const bind = (id, k, ev) => $(id).addEventListener(ev, e => {
+    const v = e.target.value;
+    if (e.target.type === 'date' && v && !e.target.validity.valid) return;
+    set(k, v);
+  });
+  bind('sl-from', 'from', 'change'); bind('sl-to', 'to', 'change');
+  bind('sl-month', 'month', 'change'); bind('sl-week', 'week', 'change');
+  bind('sl-zone', 'zone', 'change'); bind('sl-category', 'category', 'change'); bind('sl-status', 'status', 'change');
+  document.querySelectorAll('.bg-seg button').forEach(b => b.addEventListener('click', () => set('prio', b.dataset.p)));
+  $('bg-reset').addEventListener('click', () => { Object.assign(S, BLANK); save(); render(); });
+  $('bg-search').addEventListener('input', e => { S.q = e.target.value; render(); });
 
   function tipFor(box) {
     let t = box.querySelector('.bg-tip');
@@ -433,36 +486,40 @@ dash.calc('byCategory', {
     const t0 = parse(rows[0].date), t1 = parse(rows[rows.length - 1].date);
     const x = d3.scaleUtc([t0, t1], [pad, W - pad]);
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
-    const wave = (a, b) => { const pts = d3.range(a, b + 1, 6).map(px => [px, base + Math.sin(px / 38) * 4]); return d3.line().curve(d3.curveBasis)(pts); };
+    const wy = px => base + Math.sin(px / 38) * 4;
+    const wave = (a, b) => d3.line().curve(d3.curveBasis)(d3.range(a, b + 1, 6).concat([b]).map(px => [px, wy(px)]));
+    const inRange = rows.filter(dayOk);
+    if (inRange.length && inRange.length < rows.length) {
+      const a = x(parse(inRange[0].date)), b = x(parse(inRange[inRange.length - 1].date));
+      svg.append('rect').attr('x', a - 4).attr('y', 22).attr('width', Math.max(8, b - a + 8)).attr('height', base - 6).attr('rx', 6)
+        .attr('fill', 'var(--leaf)').attr('fill-opacity', .1);
+    }
     svg.append('path').attr('d', wave(pad, W - pad)).attr('fill', 'none').attr('stroke', 'var(--soil)').attr('stroke-width', 2).attr('stroke-dasharray', '2 5').attr('stroke-linecap', 'round');
-    const nowDt = parse(todayIso);
-    const nowX = Math.max(pad, Math.min(W - pad, x(nowDt)));
+    const nowX = Math.max(pad, Math.min(W - pad, x(parse(todayIso))));
     const grown = svg.append('path').attr('d', wave(pad, nowX)).attr('fill', 'none').attr('stroke', 'var(--leaf)').attr('stroke-width', 3).attr('stroke-linecap', 'round');
     d3.utcMonth.range(d3.utcMonth.ceil(t0), d3.utcDay.offset(t1, 1)).concat([t0]).forEach(m => {
       svg.append('text').attr('x', x(m)).attr('y', H - 4).attr('text-anchor', m.getTime() === t1.getTime() ? 'end' : 'start').text(d3.utcFormat('%b')(m));
       svg.append('line').attr('x1', x(m)).attr('x2', x(m)).attr('y1', base + 8).attr('y2', base + 14).attr('stroke', 'var(--cds-chart-axis)');
     });
     const tip = tipFor(box);
-    const jobs = rows.filter(r => r.task && r.task.trim());
-    jobs.forEach((r, i) => {
-      const jx = x(parse(r.date)), jy = base + Math.sin(jx / 38) * 4;
-      const up = i % 2 === 0, s = r.priority === 'High' ? 15 : r.priority === 'Medium' ? 12 : 10;
-      const g = svg.append('g').attr('class', 'bg-hit').attr('tabindex', 0).attr('opacity', prioOk(r) ? 1 : .18);
+    rows.filter(isJob).forEach((r, i) => {
+      const jx = x(parse(r.date)), jy = wy(jx);
+      const s = r.priority === 'High' ? 15 : r.priority === 'Medium' ? 12 : 10;
+      const g = svg.append('g').attr('class', 'bg-hit').attr('tabindex', 0).attr('opacity', jobOk(r) ? 1 : .15);
       g.append('path').attr('d', leaf(0, -s, s)).attr('fill', shade[r.priority] || 'var(--leaf-mid)')
         .attr('stroke', 'var(--color-panel)').attr('stroke-width', 1)
-        .attr('transform', `translate(${jx},${jy}) rotate(${up ? -10 : 170})`);
+        .attr('transform', `translate(${jx},${jy}) rotate(${i % 2 === 0 ? -10 : 170})`);
       g.on('mousemove focus', (ev) => { const [px, py] = ev.type === 'focus' ? [jx, jy] : d3.pointer(ev, box); tip.show([fmtLong(parse(r.date)) + ' · ' + r.priority, r.task], px, py); })
         .on('mouseleave blur', () => tip.hide());
     });
-    const sprout = svg.append('g').attr('transform', `translate(${nowX},${base + Math.sin(nowX / 38) * 4})`);
-    sprout.append('circle').attr('r', 6).attr('fill', 'var(--sun)').attr('stroke', 'var(--color-panel)').attr('stroke-width', 2);
+    svg.append('circle').attr('cx', nowX).attr('cy', wy(nowX)).attr('r', 6).attr('fill', 'var(--sun)').attr('stroke', 'var(--color-panel)').attr('stroke-width', 2);
     svg.append('text').attr('class', 'now').attr('x', nowX).attr('y', 14).attr('text-anchor', nowX > W - 60 ? 'end' : nowX < 60 ? 'start' : 'middle').text('Today');
     svg.append('line').attr('x1', nowX).attr('x2', nowX).attr('y1', 20).attr('y2', base - 8).attr('stroke', 'var(--sun)').attr('stroke-width', 1.5).attr('stroke-dasharray', '3 3');
     if (!animated && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
       const len = grown.node().getTotalLength();
       grown.attr('stroke-dasharray', `${len} ${len}`).attr('stroke-dashoffset', len).transition().duration(1100).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0);
-      animated = true;
     }
+    animated = true;
   }
 
   // ---------- season calendar ----------
@@ -492,14 +549,14 @@ dash.calc('byCategory', {
     const tip = tipFor(box);
     const pos = r => [left + d3.utcMonday.count(start, r.dt) * step, top + ((r.dt.getUTCDay() + 6) % 7) * step];
     const g = svg.selectAll('g.d').data(days).join('g').attr('class', 'd bg-hit')
-      .attr('tabindex', r => r.task ? 0 : null)
-      .attr('opacity', r => r.task && !prioOk(r) ? .15 : 1);
+      .attr('tabindex', r => isJob(r) ? 0 : null)
+      .attr('opacity', r => !dayOk(r) ? .22 : isJob(r) && !attrOk(r) ? .15 : 1);
     g.append('rect').attr('x', r => pos(r)[0]).attr('y', r => pos(r)[1]).attr('width', cell).attr('height', cell).attr('fill', 'transparent');
-    g.filter(r => !r.task).append('circle')
+    g.filter(r => !isJob(r)).append('circle')
       .attr('cx', r => pos(r)[0] + cell / 2).attr('cy', r => pos(r)[1] + cell / 2)
       .attr('r', Math.max(1.5, cell / 7))
       .attr('fill', r => r.date < todayIso ? 'var(--soil)' : 'var(--cds-chart-grid)');
-    g.filter(r => !!r.task).append('path')
+    g.filter(isJob).append('path')
       .attr('d', r => { const [x, y] = pos(r); return leaf(x + 1, y + 1, cell - 2); })
       .attr('fill', r => shade[r.priority] || 'var(--leaf-mid)');
     g.filter(r => r.date === todayIso).append('circle')
@@ -507,8 +564,8 @@ dash.calc('byCategory', {
       .attr('fill', 'none').attr('stroke', 'var(--sun)').attr('stroke-width', 2.5);
     g.on('mousemove focus', (ev, r) => {
         const [x, y] = ev.type === 'focus' ? [pos(r)[0] * box.clientWidth / W, pos(r)[1]] : d3.pointer(ev, box);
-        tip.show(r.task ? [fmtLong(r.dt) + ' · ' + r.priority + ' priority', r.task, r.zone + ' · ' + r.category, 'Status: ' + r.status]
-          : [fmtLong(r.dt), r.date === todayIso ? 'Today · no job planned' : 'No job planned'], x, y);
+        tip.show(isJob(r) ? [fmtLong(r.dt) + ' · Week ' + r.week + ' · ' + r.priority + ' priority', r.task, r.zone + ' · ' + r.category, 'Status: ' + r.status]
+          : [fmtLong(r.dt) + ' · Week ' + r.week, r.date === todayIso ? 'Today · no job planned' : 'No job planned'], x, y);
       })
       .on('mouseleave blur', () => tip.hide());
 
@@ -523,71 +580,88 @@ dash.calc('byCategory', {
     item('Today', sv => el(sv, 'circle', { cx: 6, cy: 6, r: 5, fill: 'none', stroke: 'var(--sun)', 'stroke-width': 2.5 }));
   }
 
-  // ---------- horizontal bars ----------
-  function drawHBars(boxId, rows, key, opts) {
+  // ---------- horizontal bars (zone / activity) ----------
+  function drawHBars(boxId, rows, key) {
     const box = $(boxId);
     box.classList.remove('dash-skeleton');
     box.replaceChildren();
-    const f = pField();
+    if (!rows.length) { const e = document.createElement('div'); e.className = 'bg-empty'; e.textContent = 'No jobs yet.'; box.appendChild(e); return; }
     const W = box.clientWidth || 360, barH = 18, gap = 9;
     const H = Math.max(barH, rows.length * (barH + gap));
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
     const probe = svg.append('text');
-    let lw = 0; rows.forEach(r => { probe.text(r[key]); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
+    let lw = 0; rows.forEach(r => { probe.text(r.name); lw = Math.max(lw, probe.node().getComputedTextLength()); }); probe.remove();
     lw = Math.min(lw + 10, W * 0.5);
-    const max = d3.max(rows, r => r.jobs) || 1;
-    const x = d3.scaleLinear([0, max], [0, Math.max(40, W - lw - 28)]);
-    const fill = state.prio === 'All' ? 'var(--leaf)' : shade[state.prio];
+    const max = d3.max(rows, r => r.total) || 1;
+    const x = d3.scaleLinear([0, max], [0, Math.max(40, W - lw - 46)]);
+    const fill = S.prio === 'All' ? 'var(--leaf)' : shade[S.prio];
+    const picked = S[key];
     const tip = tipFor(box);
     const g = svg.selectAll('g').data(rows).join('g').attr('transform', (r, i) => `translate(0,${i * (barH + gap)})`)
       .attr('class', 'bg-hit').attr('tabindex', 0).attr('role', 'button')
-      .attr('aria-label', r => `${r[key]}: ${r[f]} jobs. Filter job list`);
+      .attr('aria-pressed', r => String(picked === r.name))
+      .attr('aria-label', r => `${r.name}: ${r.shown} of ${r.total} jobs. Slice by this`);
     g.append('rect').attr('x', 0).attr('y', -gap / 2).attr('width', W).attr('height', barH + gap).attr('fill', 'transparent');
-    g.append('text').attr('x', lw - 8).attr('y', barH / 2 + 4).attr('text-anchor', 'end').text(r => r[key]);
-    g.append('rect').attr('x', lw).attr('y', barH / 2 - 1).attr('height', 2).attr('width', r => x(r.jobs)).attr('fill', 'var(--cds-chart-grid)');
+    g.append('text').attr('x', lw - 8).attr('y', barH / 2 + 4).attr('text-anchor', 'end').attr('class', r => picked === r.name ? 'val' : null).text(r => r.name);
+    g.append('rect').attr('x', lw).attr('y', 0).attr('height', barH).attr('rx', 4).attr('width', r => r.total ? Math.max(4, x(r.total)) : 3).attr('fill', 'var(--cds-chart-grid)');
     g.append('rect').attr('class', barsGrown ? null : 'bg-grow').attr('x', lw).attr('y', 0).attr('height', barH).attr('rx', 4)
-      .attr('width', r => r[f] ? Math.max(4, x(r[f])) : 3)
-      .attr('fill', r => r[f] ? (state.filter && state.filter.key === key && state.filter.value !== r[key] ? 'var(--cds-chart-muted)' : fill) : 'var(--cds-chart-grid)');
-    g.append('text').attr('class', 'val').attr('x', r => lw + Math.max(r[f] ? Math.max(4, x(r[f])) : 3, x(r.jobs)) + 6).attr('y', barH / 2 + 4).text(r => r[f]);
-    g.on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, box); tip.show([r[key], `${r.jobs} job${r.jobs === 1 ? '' : 's'} · High ${r.high}, Medium ${r.medium}, Low ${r.low}`], px, py); })
+      .attr('width', r => r.shown ? Math.max(4, x(r.shown)) : 0)
+      .attr('fill', r => picked && picked !== r.name ? 'var(--cds-chart-muted)' : fill);
+    g.append('text').attr('class', 'val').attr('x', r => lw + (r.total ? Math.max(4, x(r.total)) : 3) + 6).attr('y', barH / 2 + 4)
+      .text(r => r.shown === r.total ? r.total : `${r.shown} / ${r.total}`);
+    g.on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, box); tip.show([r.name, `${r.shown} of ${r.total} job${r.total === 1 ? '' : 's'} match the slicers`, 'Click to slice by this'], px, py); })
       .on('mouseleave', () => tip.hide())
       .on('click keydown', (ev, r) => {
         if (ev.type === 'keydown' && ev.key !== 'Enter' && ev.key !== ' ') return;
         ev.preventDefault();
-        state.filter = state.filter && state.filter.value === r[key] ? null : { key, value: r[key], label: opts.label };
-        render();
+        set(key, picked === r.name ? '' : r.name);
       });
   }
 
   // ---------- month columns ----------
-  function drawMonths(rows) {
+  function drawMonths(plan) {
     const box = $('bg-month');
     box.classList.remove('dash-skeleton');
     box.replaceChildren();
-    const f = pField();
+    const rows = [];
+    for (const r of plan) {
+      let m = rows.find(o => o.month === r.month);
+      if (!m) rows.push(m = { month: r.month, days: 0, total: 0, shown: 0 });
+      m.days += 1;
+      if (isJob(r)) { m.total += 1; if (jobOk(r)) m.shown += 1; }
+    }
     const W = box.clientWidth || 360, H = 180, m = { t: 16, b: 22, l: 4, r: 4 };
     const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
     const x = d3.scaleBand(rows.map(r => r.month), [m.l, W - m.r]).padding(0.3);
-    const y = d3.scaleLinear([0, Math.max(1, d3.max(rows, r => r.jobs))], [H - m.b, m.t]);
+    const y = d3.scaleLinear([0, Math.max(1, d3.max(rows, r => r.total))], [H - m.b, m.t]);
     svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', H - m.b).attr('y2', H - m.b).attr('stroke', 'var(--soil)').attr('stroke-width', 2).attr('stroke-linecap', 'round');
     const tip = tipFor(box);
     const bw = Math.min(32, x.bandwidth());
-    const fill = state.prio === 'All' ? 'var(--leaf)' : shade[state.prio];
-    const g = svg.selectAll('g.c').data(rows).join('g').attr('class', 'c');
+    const fill = S.prio === 'All' ? 'var(--leaf)' : shade[S.prio];
+    const col = (r, v) => {
+      if (!v) return '';
+      const x0 = x(r.month) + (x.bandwidth() - bw) / 2, y0 = y(v), y1 = H - m.b, rr = Math.min(4, (y1 - y0));
+      return `M${x0},${y1}V${y0 + rr}Q${x0},${y0} ${x0 + rr},${y0}H${x0 + bw - rr}Q${x0 + bw},${y0} ${x0 + bw},${y0 + rr}V${y1}Z`;
+    };
+    const g = svg.selectAll('g.c').data(rows).join('g').attr('class', 'c bg-hit').attr('tabindex', 0).attr('role', 'button')
+      .attr('aria-label', r => `${r.month}: ${r.shown} of ${r.total} jobs. Slice by this month`);
     g.append('rect').attr('x', r => x(r.month)).attr('y', m.t).attr('width', x.bandwidth()).attr('height', H - m.t - m.b).attr('fill', 'transparent');
-    g.append('path').attr('fill', r => r[f] ? fill : 'none')
-      .attr('d', r => {
-        if (!r[f]) return '';
-        const x0 = x(r.month) + (x.bandwidth() - bw) / 2, y0 = y(r[f]), y1 = H - m.b, rr = Math.min(4, (y1 - y0));
-        return `M${x0},${y1}V${y0 + rr}Q${x0},${y0} ${x0 + rr},${y0}H${x0 + bw - rr}Q${x0 + bw},${y0} ${x0 + bw},${y0 + rr}V${y1}Z`;
-      });
-    g.filter(r => !r[f]).append('path').attr('d', r => leaf(x(r.month) + x.bandwidth() / 2 - 4, H - m.b - 12, 8)).attr('fill', 'none').attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 1);
-    g.append('text').attr('class', 'val').attr('text-anchor', 'middle').attr('x', r => x(r.month) + x.bandwidth() / 2).attr('y', r => (r[f] ? y(r[f]) : H - m.b - 12) - 5).text(r => r[f]);
+    g.append('path').attr('fill', 'var(--cds-chart-grid)').attr('d', r => col(r, r.total));
+    g.append('path').attr('fill', r => S.month && S.month !== r.month ? 'var(--cds-chart-muted)' : fill).attr('d', r => col(r, r.shown));
+    g.filter(r => !r.total).append('path').attr('d', r => leaf(x(r.month) + x.bandwidth() / 2 - 4, H - m.b - 12, 8)).attr('fill', 'none').attr('stroke', 'var(--cds-chart-muted)').attr('stroke-width', 1);
+    g.append('text').attr('class', 'val').attr('text-anchor', 'middle').attr('x', r => x(r.month) + x.bandwidth() / 2)
+      .attr('y', r => (r.total ? y(r.total) : H - m.b - 12) - 5).text(r => r.shown === r.total ? r.total : `${r.shown}/${r.total}`);
     const short = W < 300;
     g.append('text').attr('text-anchor', 'middle').attr('x', r => x(r.month) + x.bandwidth() / 2).attr('y', H - 6)
+      .attr('class', r => S.month === r.month ? 'val' : null)
       .text(r => { const dt = new Date(r.month + ' 1 UTC'); return isNaN(dt) ? r.month.slice(0, 3) : d3.utcFormat(short ? '%b' : "%b '%y")(dt); });
-    g.on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, box); tip.show([r.month, `${r.jobs} job${r.jobs === 1 ? '' : 's'} over ${r.days} days`, `High ${r.high} · Medium ${r.medium} · Low ${r.low}`], px, py); })
-      .on('mouseleave', () => tip.hide());
+    g.on('mousemove', (ev, r) => { const [px, py] = d3.pointer(ev, box); tip.show([r.month, `${r.shown} of ${r.total} job${r.total === 1 ? '' : 's'} match the slicers`, `${r.days} days in the plan · click to slice`], px, py); })
+      .on('mouseleave', () => tip.hide())
+      .on('click keydown', (ev, r) => {
+        if (ev.type === 'keydown' && ev.key !== 'Enter' && ev.key !== ' ') return;
+        ev.preventDefault();
+        set('month', S.month === r.month ? '' : r.month);
+      });
   }
 
   // ---------- table ----------
@@ -595,11 +669,9 @@ dash.calc('byCategory', {
     const tb = $('bg-tbody');
     tb.replaceChildren();
     const tmap = new Map(timing.map(t => [t.date, t.timing]));
-    const q = state.q.toLowerCase();
-    const list = rows.filter(r => r.task && r.task.trim())
-      .filter(prioOk)
-      .filter(r => !state.filter || r[state.filter.key] === state.filter.value)
-      .filter(r => !q || [r.task, r.zone, r.category, r.priority, r.status, r.day].join(' ').toLowerCase().includes(q))
+    const q = S.q.toLowerCase();
+    const list = rows.filter(jobOk)
+      .filter(r => !q || [r.task, r.zone, r.category, r.priority, r.status, r.day, r.month].join(' ').toLowerCase().includes(q))
       .sort((a, b) => a.date.localeCompare(b.date));
     for (const r of list) {
       const tr = document.createElement('tr');
@@ -623,27 +695,14 @@ dash.calc('byCategory', {
       tb.appendChild(tr);
     }
     $('bg-noresults').hidden = list.length > 0;
-    const chip = $('bg-filter');
-    chip.hidden = !state.filter;
-    if (state.filter) chip.textContent = `${state.filter.label}: ${state.filter.value}  ✕`;
   }
 
-  $('bg-search').addEventListener('input', e => { state.q = e.target.value; render(); });
-  $('bg-filter').addEventListener('click', () => { state.filter = null; render(); });
-  document.querySelectorAll('.bg-seg button').forEach(b => b.addEventListener('click', () => {
-    state.prio = b.dataset.p;
-    try { localStorage.setItem('bg-prio', state.prio); } catch (e) {}
-    render();
-  }));
-
   function render() {
-    document.querySelectorAll('.bg-seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.p === state.prio)));
-    $('bg-scope').textContent = state.prio === 'All' ? 'Filters the calendar, charts and job list below.' : `Showing ${state.prio.toLowerCase()}-priority jobs below. The figures above cover the whole season.`;
-    const P = dash.data('planner'), S = dash.data('season'), T = dash.data('jobTiming');
-    const M = dash.data('byMonth'), Z = dash.data('byZone'), C = dash.data('byCategory');
+    const P = dash.data('planner'), L = dash.data('lists'), Sn = dash.data('season'), T = dash.data('jobTiming');
+    syncControls(P, L);
 
-    if (S.status === 'ok' && S.data[0]) {
-      const s = S.data[0];
+    if (Sn.status === 'ok' && Sn.data[0]) {
+      const s = Sn.data[0];
       $('bg-pastdue-big').querySelector('span').style.color = s.pastDue ? 'var(--color-bad)' : '';
       $('bg-pastdue-ico').className = 'bg-ico' + (s.pastDue ? ' alert' : '');
       document.querySelectorAll('[data-source="season"]').forEach(el => {
@@ -666,17 +725,22 @@ dash.calc('byCategory', {
     }
 
     const bad = st => st === 'error' || st === 'connect';
-    if (P.status === 'ok') { drawVine(P.data); drawCalendar(P.data); }
-    else if (bad(P.status)) { failed($('bg-vine')); failed($('bg-cal')); } else { waiting($('bg-vine')); waiting($('bg-cal')); }
-    if (M.status === 'ok') drawMonths(M.data); else if (bad(M.status)) failed($('bg-month')); else waiting($('bg-month'));
-    if (Z.status === 'ok') drawHBars('bg-zone', Z.data, 'zone', { label: 'Zone' }); else if (bad(Z.status)) failed($('bg-zone')); else waiting($('bg-zone'));
-    if (C.status === 'ok') {
-      const used = C.data.filter(r => r.jobs > 0).sort((a, b) => b.jobs - a.jobs);
-      drawHBars('bg-cat', used, 'category', { label: 'Activity' });
-      $('bg-cat-note').textContent = `${used.length} of ${C.data.length} activity categories are in use; ${C.data.length - used.length} have no jobs yet. Click a bar to filter the job list.`;
-    } else if (bad(C.status)) failed($('bg-cat')); else waiting($('bg-cat'));
-    if (P.status === 'ok') drawTable(P.data, T.status === 'ok' ? T.data : []); else $('bg-tbody').replaceChildren();
-    if (Z.status === 'ok' && C.status === 'ok') barsGrown = true;
+    const charts = ['bg-vine', 'bg-cal', 'bg-month', 'bg-zone', 'bg-cat'];
+    if (P.status === 'ok' && P.data.length) {
+      drawVine(P.data); drawCalendar(P.data); drawMonths(P.data);
+      drawTable(P.data, T.status === 'ok' ? T.data : []);
+      if (L.status === 'ok') {
+        const count = (key, name) => { const j = P.data.filter(r => isJob(r) && r[key] === name); return { name, total: j.length, shown: j.filter(jobOk).length }; };
+        const byList = (list, key) => L.data.filter(l => l.list === list).sort((a, b) => +a.order - +b.order).map(l => count(key, l.value));
+        drawHBars('bg-zone', byList('zone', 'zone'), 'zone');
+        const cats = byList('category', 'category');
+        const used = cats.filter(r => r.total > 0).sort((a, b) => b.total - a.total);
+        drawHBars('bg-cat', used, 'category');
+        $('bg-cat-note').textContent = `${used.length} of ${cats.length} activity categories are in use; ${cats.length - used.length} have no jobs yet. Click a bar to slice by that activity.`;
+        barsGrown = true;
+      } else if (bad(L.status)) { failed($('bg-zone')); failed($('bg-cat')); } else { waiting($('bg-zone')); waiting($('bg-cat')); }
+    } else if (bad(P.status)) { charts.forEach(id => failed($(id))); $('bg-tbody').replaceChildren(); }
+    else { charts.forEach(id => waiting($(id))); $('bg-tbody').replaceChildren(); }
   }
 
   dash.onData(render);
